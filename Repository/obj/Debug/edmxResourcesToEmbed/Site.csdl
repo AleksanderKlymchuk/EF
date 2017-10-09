@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EFTestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Age" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="StudentCourse" Relationship="EFTestModel.FK__StudentCo__Stude__5FB337D6" FromRole="Student" ToRole="StudentCourse" />
+  </EntityType>
+  <EntityContainer Name="EFTestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Student" EntityType="Self.Student" />
+    <EntitySet Name="StudentCourse" EntityType="EFTestModel.StudentCourse" />
+    <AssociationSet Name="FK__StudentCo__Stude__5FB337D6" Association="EFTestModel.FK__StudentCo__Stude__5FB337D6">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="StudentCourse" EntitySet="StudentCourse" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="StudentCourse">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentId" Type="Int32" Nullable="false" />
+    <Property Name="Course" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Student" Relationship="EFTestModel.FK__StudentCo__Stude__5FB337D6" FromRole="StudentCourse" ToRole="Student" />
+  </EntityType>
+  <Association Name="FK__StudentCo__Stude__5FB337D6">
+    <End Type="EFTestModel.Student" Role="Student" Multiplicity="1" />
+    <End Type="EFTestModel.StudentCourse" Role="StudentCourse" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="StudentCourse">
+        <PropertyRef Name="StudentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

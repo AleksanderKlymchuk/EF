@@ -1,0 +1,16 @@
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Test.exe.config
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Test.exe
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Test.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\EntityFramework.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Model.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Repository.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Service.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Model.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Repository.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\Service.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\EntityFramework.xml
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\obj\Debug\Test.exe
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Test\obj\Debug\Test.pdb

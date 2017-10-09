@@ -1,0 +1,7 @@
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\bin\Debug\Service.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\bin\Debug\Service.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\bin\Debug\Model.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\bin\Debug\Model.pdb
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\obj\Debug\Service.csprojResolveAssemblyReference.cache
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\obj\Debug\Service.dll
+C:\Users\oleksandr.OK\Documents\Visual Studio 2015\Projects\EF\Service\obj\Debug\Service.pdb
