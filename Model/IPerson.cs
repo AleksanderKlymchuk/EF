@@ -14,6 +14,7 @@ namespace Model
         string LastName { get; }
         int Age { get; }
         IEnumerable<IStudentCourse> StudentCourse { get; }
+        void SetProperties(StudentProperties properties);
     }
     public interface IStudentCourse
     {
