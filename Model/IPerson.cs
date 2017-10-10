@@ -13,6 +13,7 @@ namespace Model
         string FirstName { get; }
         string LastName { get; }
         int Age { get; }
+        string Addres { get; }
         IEnumerable<IStudentCourse> StudentCourse { get; }
         void SetProperties(StudentProperties properties);
     }
