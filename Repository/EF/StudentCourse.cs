@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository
+namespace Repository.EF
 {
     public partial class StudentCourse:IStudentCourse
     {

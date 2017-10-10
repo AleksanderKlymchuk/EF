@@ -39,6 +39,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -51,32 +52,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\Person.cs" />
-    <Compile Include="EF\PersonCourse.cs" />
+    <Compile Include="EF\Site.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Site.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EF\Student.cs" />
+    <Compile Include="EF\StudentCourse.cs" />
     <Compile Include="GenericRepository.cs" />
     <Compile Include="PersonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Site.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Site.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Site.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Site.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Site.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Site.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Student.cs">
-      <DependentUpon>Site.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StudentCourse.cs">
-      <DependentUpon>Site.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
@@ -86,27 +71,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="EF\EF.Reverse.POCO.Core.ttinclude" />
+    <None Include="EF\EF.Reverse.POCO.ttinclude" />
     <None Include="packages.config" />
-    <EntityDeploy Include="Site.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Site.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Site.edmx.diagram">
-      <DependentUpon>Site.edmx</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Site.Context.tt">
+    <Content Include="EF\Site.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Site.edmx</DependentUpon>
-      <LastGenOutput>Site.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Site.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Site.edmx</DependentUpon>
       <LastGenOutput>Site.cs</LastGenOutput>
     </Content>
   </ItemGroup>

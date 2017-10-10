@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository
+namespace Repository.EF
 {
     public partial class Student : IStudent
     {
-        IEnumerable<IStudentCourse> IStudent.StudentCourse => StudentCourse;
+        IEnumerable<IStudentCourse> IStudent.StudentCourse => StudentCourses;
         public void SetProperties(StudentProperties properties)
         {
             FirstName = properties.FirstName ?? FirstName;
@@ -17,7 +17,7 @@ namespace Repository
             Age = properties.Age ?? Age;
             if (properties.StudentCourse != null)
             {
-                StudentCourse = properties.StudentCourse.Value.Select(x => new StudentCourse() { Course = x.Course }).ToList();
+                StudentCourses = properties.StudentCourse.Value.Select(x => new StudentCourse() { Course = x.Course }).ToList();
             }
         }
 

@@ -1,4 +1,5 @@
 ﻿using Model;
+using Repository.EF;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -11,15 +12,15 @@ namespace Repository
 {
     public class GenericRepository<ReadModel,CommandModel, TEntity>: IDisposable, IGenericRepository<ReadModel,CommandModel> where TEntity :class, ReadModel
     {
-        protected readonly EFTestEntities _context;
+        protected readonly IMyDbContext _context;
 
-        public GenericRepository(EFTestEntities context)
+        public GenericRepository(IMyDbContext context)
         {
             _context = context;
 
         }
 
-        public ReadModel Get(int Id)
+        public virtual ReadModel Get(int Id)
         {
             return _context.Set<TEntity>().Find(Id);
 
